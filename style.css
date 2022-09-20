@@ -1,0 +1,114 @@
+
+* {
+    
+    margin: 0;
+    padding: 0;
+    
+    font-family: arial , sans-serif;
+}
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.8) , rgba(0, 0, 0, 0.521) ) , url(img/house_bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    
+    width: 95%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo img {
+    height: 100px;
+    cursor: pointer;
+}
+
+.nav-bar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.nav-bar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10;
+}
+
+.nav-bar ul li:hover::after {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.main{
+    
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.main h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.main p {
+    margin: 20px 0;
+    font-weight: 100;
+    line-height: 20px;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background-color: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button/:hover {
+    border: none;
+}
